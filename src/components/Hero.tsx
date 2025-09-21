@@ -25,8 +25,8 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col justify-center min-h-screen px-4 sm:px-6 md:px-10 lg:px-16 xl:px-18">
         {/* Top Labels */}
         <div className="flex flex-row justify-between items-center mb-0">
-          <div className="text-lg font-light tracking-wider">SOFTWARE</div>
-          <div className="text-lg font-light tracking-wider">
+          <div className="text-xl font-light tracking-wider">SOFTWARE</div>
+          <div className="text-xl font-light tracking-wider">
             SCROLL TO EXPLORE
           </div>
         </div>
@@ -49,10 +49,8 @@ export default function Hero() {
 
               {/* Description */}
               <div className=" lg:max-w-5xl">
-                <p className="text-3xl sm:text-2xl lg:text-4xl font-light leading-relaxed text-white">
-                 <span className="text-gray-500"> Bringing together strategy, creativity and technology</span> to build
-                  digital products, websites, and apps that make sense to
-                  businesses and people.
+                <p className="text-3xl sm:text-2xl lg:text-5xl lg:text-[2.3em]  font-light leading-relaxed text-white px-5">
+                 <span className="text-gray-500">Turning ideas into elegant digital products, websites, and apps</span> by blending design, code, and problem-solving to empower businesses, enhance user experiences, and deliver meaningful impact.
                 </p>
               </div>
 
