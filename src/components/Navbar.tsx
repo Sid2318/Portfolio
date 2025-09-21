@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import About from "./About";
 
 export default function Navbar() {
   const [activeButton, setActiveButton] = useState("");
@@ -68,7 +69,7 @@ export default function Navbar() {
         <div className="flex justify-center">
           <div className="flex space-x-8 bg-black/20 backdrop-blur-md rounded-full px-8 py-2 border border-white/10">
             <a
-              href="#home"
+              href="#"
               className={`px-4 py-2 text-gray-300 tracking-wide uppercase transition-all duration-300 ease-out
     ${
       activeButton === "nav-home"
@@ -98,20 +99,20 @@ export default function Navbar() {
             </a>
 
             <a
-              href="#services"
+              href="#skills"
               className={`px-4 py-2 text-gray-300 tracking-wide uppercase transition-all duration-300 ease-out
     ${
-      activeButton === "nav-home"
+      activeButton === "nav-skills"
         ? "text-[1.125rem] font-bold"
         : "text-[1rem] font-medium hover:text-[1.045rem] hover:font-bold"
     }`}
               onClick={() =>
                 setActiveButton(
-                  activeButton === "nav-services" ? "" : "nav-services"
+                  activeButton === "nav-skills" ? "" : "nav-skills"
                 )
               }
             >
-              Services
+              Skills
             </a>
 
             <a
