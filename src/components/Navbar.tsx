@@ -1,156 +1,60 @@
 "use client";
 import { useState } from "react";
-import About from "./About";
 
 export default function Navbar() {
   const [activeButton, setActiveButton] = useState("");
 
+  const navItems = [
+    { href: "#", label: "Home", id: "nav-home" },
+    { href: "#about", label: "About", id: "nav-about" },
+    { href: "#skills", label: "Skills", id: "nav-skills" },
+    { href: "#projects", label: "Projects", id: "nav-projects" },
+    { href: "#contact", label: "Contact", id: "nav-contact" },
+  ];
+
   return (
-    <>
-      <style jsx>{`
-        @keyframes slideIn {
-          from {
-            width: 0;
-          }
-          to {
-            width: 100%;
-          }
-        }
-        @keyframes bounce {
-          0%,
-          20%,
-          50%,
-          80%,
-          100% {
-            transform: translateY(0);
-          }
-          40% {
-            transform: translateY(-10px);
-          }
-          60% {
-            transform: translateY(-5px);
-          }
-        }
-        @keyframes rotate-border {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
-        }
-        @keyframes pulse-glow {
-          0%,
-          100% {
-            box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
-          }
-          50% {
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
-              0 0 30px rgba(255, 255, 255, 0.4);
-          }
-        }
-        @keyframes morph {
-          0% {
-            border-radius: 9999px;
-            transform: scale(1) rotate(0deg);
-          }
-          50% {
-            border-radius: 12px;
-            transform: scale(1.1) rotate(5deg);
-          }
-          100% {
-            border-radius: 8px;
-            transform: scale(1.05) rotate(3deg);
-          }
-        }
-      `}</style>
-      <nav className="fixed top-0 left-0 right-0 z-50 p-6">
-        {/* Regular Navigation with Morphic Changes */}
-        <div className="flex justify-center">
-          <div className="flex space-x-8 bg-black/20 backdrop-blur-md rounded-full px-8 py-2 border border-white/10">
-            <a
-              href="#"
-              className={`px-4 py-2 text-gray-300 tracking-wide uppercase transition-all duration-300 ease-out
-    ${
-      activeButton === "nav-home"
-        ? "text-[1.125rem] font-bold"
-        : "text-[1rem] font-medium hover:text-[1.045rem] hover:font-bold"
-    }`}
-              onClick={() =>
-                setActiveButton(activeButton === "nav-home" ? "" : "nav-home")
-              }
-            >
-              Home
-            </a>
-
-            <a
-              href="#about"
-              className={`px-4 py-2 text-gray-300 tracking-wide uppercase transition-all duration-300 ease-out
-    ${
-      activeButton === "nav-home"
-        ? "text-[1.125rem] font-bold"
-        : "text-[1rem] font-medium hover:text-[1.045rem] hover:font-bold"
-    }`}
-              onClick={() =>
-                setActiveButton(activeButton === "nav-about" ? "" : "nav-about")
-              }
-            >
-              About
-            </a>
-
-            <a
-              href="#skills"
-              className={`px-4 py-2 text-gray-300 tracking-wide uppercase transition-all duration-300 ease-out
-    ${
-      activeButton === "nav-skills"
-        ? "text-[1.125rem] font-bold"
-        : "text-[1rem] font-medium hover:text-[1.045rem] hover:font-bold"
-    }`}
-              onClick={() =>
-                setActiveButton(
-                  activeButton === "nav-skills" ? "" : "nav-skills"
-                )
-              }
-            >
-              Skills
-            </a>
-
-            <a
-              href="#projects"
-              className={`px-4 py-2 text-gray-300 tracking-wide uppercase transition-all duration-300 ease-out
-    ${
-      activeButton === "nav-projects"
-        ? "text-[1.125rem] font-bold"
-        : "text-[1rem] font-medium hover:text-[1.045rem] hover:font-bold"
-    }`}
-              onClick={() =>
-                setActiveButton(
-                  activeButton === "nav-projects" ? "" : "nav-projects"
-                )
-              }
-            >
-              Projects
-            </a>
-
-            <a
-              href="#contact"
-              className={`px-4 py-2 text-gray-300 tracking-wide uppercase transition-all duration-300 ease-out
-    ${
-      activeButton === "nav-home"
-        ? "text-[1.125rem] font-bold"
-        : "text-[1rem] font-medium hover:text-[1.045rem] hover:font-bold"
-    }`}
-              onClick={() =>
-                setActiveButton(
-                  activeButton === "nav-contact" ? "" : "nav-contact"
-                )
-              }
-            >
-              Contact
-            </a>
-          </div>
+    <nav className="fixed top-0 left-0 right-0 z-50 p-6">
+      <div className="flex justify-center">
+        <div className="flex space-x-2 bg-black/20 backdrop-blur-md rounded-full px-6 py-2 border border-white/10">
+          {navItems.map((item) => {
+            const isActive = activeButton === item.id;
+            return (
+              <a
+                key={item.id}
+                href={item.href}
+                className={`
+                  relative px-4 py-2 text-sm font-medium text-gray-300 
+                  tracking-wide uppercase transition-all duration-300 ease-out
+                  group focus:outline-none focus:ring-2 focus:ring-white/50 
+                  focus:ring-offset-2 focus:ring-offset-black/20 rounded-lg
+                  ${isActive 
+                    ? 'text-white font-bold text-lg' 
+                    : 'hover:text-white hover:font-semibold hover:text-base'
+                  }
+                `}
+                onClick={() =>
+                  setActiveButton(activeButton === item.id ? "" : item.id)
+                }
+              >
+                <span className="relative z-10">{item.label}</span>
+                <div 
+                  className={`
+                    absolute inset-0 rounded-lg border transition-all duration-300 ease-out
+                    ${isActive
+                      ? 'border-white/60 bg-white/10 shadow-lg shadow-white/20'
+                      : 'border-transparent group-hover:border-white/30 group-hover:bg-white/5'
+                    }
+                  `}
+                />
+                {/* Active indicator */}
+                {isActive && (
+                  <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-white rounded-full" />
+                )}
+              </a>
+            );
+          })}
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 }

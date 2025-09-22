@@ -6,7 +6,7 @@ const projectsData = [
   {
     title: "DataPilot-AutoML-Assistant",
     year: "2025",
-    link: "#",
+    link: "https://github.com/Sid2318/DataPilot-AutoML-Assistant",
     image: "/images/datapilot.png",
     description: [
       "Built AutoML, a web app with Streamlit, automating the ML pipeline — data cleaning, EDA, preprocessing, hyperparameter tuning (Optuna), ensemble modeling, and deployment-ready outputs.",
@@ -25,7 +25,7 @@ const projectsData = [
   {
     title: "Gram Nirman Mitra",
     year: "2024",
-    link: "#",
+    link: "https://github.com/Sid2318/Gram-Nirman-Mitra",
     badge: "SIH Finalist",
     image: "/images/gramnirman.png",
     description: [
@@ -43,7 +43,7 @@ const projectsData = [
   {
     title: "CrispCast",
     year: "2025",
-    link: "#",
+    link: "https://github.com/Sid2318/CrispCast",
     image: "/images/crispcast.png",
     description: [
       "Developed CrispCast, an intelligent news summarization agent that autonomously fetches, scrapes, and summarizes articles using HuggingFace NLP models.",
@@ -52,21 +52,28 @@ const projectsData = [
     ],
     technologies: ["FastAPI", "React", "HuggingFace", "NLP", "Python"],
   },
-  //   {
-  //     title: "DocuMate",
-  //     year: "2025",
-  //     link: "#",
-  //     image: "/images/documate.png",
-  //     description: [
-  //       "Developed DocuMate, an agentic RAG system that autonomously ingests PDFs & PPTX files, builds vector embeddings, and answers user queries contextually.",
-  //       "Engineered a FastAPI + React full-stack agent with ChromaDB-powered memory and model caching for faster, intelligent document retrieval."
-  //     ],
-  //     technologies: ["FastAPI", "React", "ChromaDB", "RAG", "Vector Embeddings", "Python"]
-  //   },
+  {
+    title: "DocuMate",
+    year: "2025",
+    link: "https://github.com/Sid2318/DocuMate",
+    image: "/images/documate.png",
+    description: [
+      "Developed DocuMate, an agentic RAG system that autonomously ingests PDFs & PPTX files, builds vector embeddings, and answers user queries contextually.",
+      "Engineered a FastAPI + React full-stack agent with ChromaDB-powered memory and model caching for faster, intelligent document retrieval.",
+    ],
+    technologies: [
+      "FastAPI",
+      "React",
+      "ChromaDB",
+      "RAG",
+      "Vector Embeddings",
+      "Python",
+    ],
+  },
   {
     title: "RealTime DDOS Attack Detection",
     year: "2024",
-    link: "#",
+    link: "https://github.com/Sid2318/DDOS-Attack-Detection",
     image: "/images/ddos.png",
     description: [
       "Network details are fetched using Scapy and fed as input to the trained model for analysis.",
@@ -84,7 +91,7 @@ const projectsData = [
   {
     title: "NexStay",
     year: "2025",
-    link: "#",
+    link: "https://github.com/Sid2318/NexStay",
     image: "/images/nexstay.png",
     description: [
       "Developed a full-stack MERN application enabling guests and hosts to manage property rentals, inspired by Airbnb.",
@@ -105,7 +112,7 @@ const projectsData = [
   {
     title: "Skin Cancer Detection: ML & CNNs",
     year: "2024",
-    link: "#",
+    link: "https://github.com/Sid2318/Skin-Cancer-Detection",
     image: "/images/skincancer.png",
     description: [
       "Engineered a deep learning-based skin cancer detection system using a Hybrid CNN-Autoencoder Model, optimizing feature extraction and classification for enhanced accuracy.",
@@ -127,71 +134,91 @@ const miniProjects = [
   {
     title: "Portfolio Website",
     year: "2025",
-    description: "Interactive portfolio built with Next.js and Tailwind CSS featuring modern animations and responsive design.",
+    link: "https://github.com/Sid2318/Portfolio",
+    description:
+      "Interactive portfolio built with Next.js and Tailwind CSS featuring modern animations and responsive design.",
     technologies: ["Next.js", "Tailwind", "TypeScript"],
     icon: "🎨",
-    color: "purple"
+    color: "purple",
   },
   {
     title: "API Experiments",
     year: "2024",
-    description: "Various REST API prototypes and microservices for learning different backend technologies.",
+    link: "https://github.com/Sid2318/API-Collection",
+    description:
+      "Various REST API prototypes and microservices for learning different backend technologies.",
     technologies: ["Node.js", "Express", "MongoDB"],
     icon: "⚡",
-    color: "green"
+    color: "green",
   },
   {
     title: "ML Notebooks",
     year: "2024",
-    description: "Jupyter notebooks for data analysis, model training, and machine learning experiments.",
+    link: "https://github.com/Sid2318/ML-Notebooks",
+    description:
+      "Jupyter notebooks for data analysis, model training, and machine learning experiments.",
     technologies: ["Python", "Jupyter", "Pandas"],
     icon: "🤖",
-    color: "orange"
+    color: "orange",
   },
   {
     title: "Weather App",
     year: "2024",
-    description: "Real-time weather application with location-based forecasts and beautiful UI.",
+    link: "https://github.com/Sid2318/Weather-App",
+    description:
+      "Real-time weather application with location-based forecasts and beautiful UI.",
     technologies: ["React", "API", "CSS"],
     icon: "🌤️",
-    color: "blue"
+    color: "blue",
   },
   {
     title: "Task Manager",
     year: "2024",
-    description: "Simple task management application with drag-and-drop functionality.",
+    link: "https://github.com/Sid2318/Task-Manager",
+    description:
+      "Simple task management application with drag-and-drop functionality.",
     technologies: ["Vue.js", "LocalStorage", "CSS"],
     icon: "📝",
-    color: "indigo"
+    color: "indigo",
   },
   {
     title: "Calculator App",
     year: "2024",
-    description: "Advanced calculator with scientific functions and modern interface design.",
+    link: "https://github.com/Sid2318/Calculator-App",
+    description:
+      "Advanced calculator with scientific functions and modern interface design.",
     technologies: ["JavaScript", "HTML", "CSS"],
     icon: "🧮",
-    color: "pink"
+    color: "pink",
   },
   {
     title: "Color Palette Generator",
     year: "2024",
-    description: "Tool for generating and managing color palettes for design projects.",
+    link: "https://github.com/Sid2318/Color-Palette-Generator",
+    description:
+      "Tool for generating and managing color palettes for design projects.",
     technologies: ["Vanilla JS", "Canvas", "CSS"],
     icon: "🎨",
-    color: "teal"
+    color: "teal",
   },
   {
     title: "Password Generator",
     year: "2024",
-    description: "Secure password generator with customizable options and strength indicators.",
+    link: "https://github.com/Sid2318/Password-Generator",
+    description:
+      "Secure password generator with customizable options and strength indicators.",
     technologies: ["JavaScript", "Crypto", "CSS"],
     icon: "🔐",
-    color: "red"
-  }
+    color: "red",
+  },
 ];
 
 // Mini Project Card Component
-const MiniProjectCard = ({ project }: { project: typeof miniProjects[0] }) => {
+const MiniProjectCard = ({
+  project,
+}: {
+  project: (typeof miniProjects)[0];
+}) => {
   const colorClasses = {
     purple: "from-purple-500/20 to-purple-600/20 border-purple-500/30",
     green: "from-green-500/20 to-green-600/20 border-green-500/30",
@@ -215,11 +242,20 @@ const MiniProjectCard = ({ project }: { project: typeof miniProjects[0] }) => {
   };
 
   return (
-    <div className="group flex-shrink-0 w-80 bg-gradient-to-br from-gray-800/20 to-gray-900/20 border border-gray-600/30 backdrop-blur-sm rounded-xl p-6 hover:bg-gradient-to-br hover:from-gray-700/30 hover:to-gray-800/30 hover:border-gray-500/40 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-gray-900/20">
+    <a
+      href={project.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group flex-shrink-0 w-80 bg-gradient-to-br from-gray-800/20 to-gray-900/20 border border-gray-600/30 backdrop-blur-sm rounded-xl p-6 hover:bg-gradient-to-br hover:from-gray-700/30 hover:to-gray-800/30 hover:border-gray-500/40 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-gray-900/20 cursor-pointer block"
+    >
       {/* Header */}
       <div className="flex items-start justify-between mb-4">
         <div className="flex items-center gap-3">
-          <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${colorClasses[project.color as keyof typeof colorClasses]} flex items-center justify-center text-xl group-hover:scale-110 transition-transform duration-300`}>
+          <div
+            className={`w-12 h-12 rounded-lg bg-gradient-to-br ${
+              colorClasses[project.color as keyof typeof colorClasses]
+            } flex items-center justify-center text-xl group-hover:scale-110 transition-transform duration-300`}
+          >
             <span className="text-2xl">{project.icon}</span>
           </div>
           <div>
@@ -229,7 +265,28 @@ const MiniProjectCard = ({ project }: { project: typeof miniProjects[0] }) => {
             <p className="text-gray-400 text-sm">{project.year}</p>
           </div>
         </div>
-        <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${colorClasses[project.color as keyof typeof colorClasses].split(' ')[0]} opacity-60 group-hover:opacity-100 transition-opacity`}></div>
+        <div className="flex items-center gap-2">
+          <div
+            className={`w-2 h-2 rounded-full bg-gradient-to-r ${
+              colorClasses[project.color as keyof typeof colorClasses].split(
+                " "
+              )[0]
+            } opacity-60 group-hover:opacity-100 transition-opacity`}
+          ></div>
+          <svg
+            className="w-4 h-4 text-gray-400 group-hover:text-gray-300 transition-colors"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+            />
+          </svg>
+        </div>
       </div>
 
       {/* Description */}
@@ -242,7 +299,7 @@ const MiniProjectCard = ({ project }: { project: typeof miniProjects[0] }) => {
         {project.technologies.map((tech, index) => (
           <span
             key={tech}
-            className={`px-3 py-1.5 rounded-full text-xs font-medium bg-gray-700/40 border border-gray-600/40 text-gray-300 group-hover:bg-gray-600/50 group-hover:border-gray-500/50 transition-all duration-200 hover:scale-105`}
+            className={`px-3 py-1.5 rounded-full text-xs font-medium bg-gray-700/40 border border-gray-600/40 text-gray-300 group-hover:bg-gray-600/50 group-hover:border-gray-500/50 transition-all duration-200`}
           >
             {tech}
           </span>
@@ -251,7 +308,7 @@ const MiniProjectCard = ({ project }: { project: typeof miniProjects[0] }) => {
 
       {/* Hover effect overlay */}
       <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
-    </div>
+    </a>
   );
 };
 
@@ -269,7 +326,7 @@ export default function Projects() {
           PROJECTS
         </h2>
         <div className="w-24 h-0.5 bg-gradient-to-r from-gray-400 to-white mx-auto rounded-full"></div>
-        <p className="text-gray-400 text-base mt-4 max-w-xl mx-auto">
+        <p className="text-gray-300 text-lg sm:text-xl font-normal leading-relaxed mt-4 max-w-xl mx-auto">
           Showcasing innovative solutions across AI, web development, and
           machine learning
         </p>
@@ -281,14 +338,14 @@ export default function Projects() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <h3 className="text-white text-lg font-semibold">
+              <h3 className="text-white text-xl font-bold">
                 Featured Projects
               </h3>
               <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded-md text-xs font-medium">
                 {projectsData.length} Projects
               </span>
             </div>
-            <div className="flex items-center gap-2 text-gray-400 text-sm">
+            <div className="flex items-center gap-2 text-gray-300 text-sm">
               <span>Scroll to explore</span>
               <svg
                 className="w-4 h-4 animate-bounce"
@@ -361,7 +418,7 @@ export default function Projects() {
                         <h3 className="text-white text-xl lg:text-2xl font-bold mb-2 leading-tight">
                           {project.title}
                         </h3>
-                        <div className="text-gray-400 text-sm font-medium">
+                        <div className="text-gray-300 text-sm font-medium">
                           Project #{(index + 1).toString().padStart(2, "0")} •{" "}
                           {project.year}
                         </div>
@@ -391,7 +448,7 @@ export default function Projects() {
                     {project.description.map((desc, i) => (
                       <p
                         key={i}
-                        className="text-gray-300 leading-relaxed text-sm"
+                        className="text-gray-300 leading-relaxed text-sm font-normal"
                       >
                         • {desc}
                       </p>
@@ -400,7 +457,7 @@ export default function Projects() {
 
                   {/* Technologies */}
                   <div>
-                    <h4 className="text-gray-400 text-xs font-semibold mb-2 uppercase tracking-wider">
+                    <h4 className="text-gray-300 text-sm font-semibold mb-2 uppercase tracking-wider">
                       Tech Stack
                     </h4>
                     <div className="flex flex-wrap gap-2">
@@ -428,7 +485,7 @@ export default function Projects() {
             Mini Projects & Experiments
           </h3>
           <div className="w-16 h-0.5 bg-gradient-to-r from-gray-500 to-gray-400 mx-auto rounded-full"></div>
-          <p className="text-gray-400 text-sm mt-3">
+          <p className="text-gray-300 text-base font-normal leading-relaxed mt-3">
             Quick prototypes and learning experiments
           </p>
         </div>
@@ -438,7 +495,7 @@ export default function Projects() {
           {/* Gradient overlays for smooth edges */}
           <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-black to-transparent z-10"></div>
           <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-black to-transparent z-10"></div>
-          
+
           <div className="flex animate-scroll gap-6 w-max">
             {/* First set of cards */}
             {miniProjects.map((project, index) => (
@@ -454,8 +511,12 @@ export default function Projects() {
         {/* Pause on hover */}
         <style jsx>{`
           @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
           }
           .animate-scroll {
             display: flex;
@@ -466,7 +527,6 @@ export default function Projects() {
           }
         `}</style>
       </div>
-
     </div>
   );
 }

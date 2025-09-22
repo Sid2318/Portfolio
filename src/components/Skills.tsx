@@ -94,7 +94,7 @@ const Skills = () => {
             SOFTWARE DEVELOPMENT
           </h2>
           <div className="w-24 h-0.5 bg-gradient-to-r from-gray-400 to-white mx-auto rounded-full"></div>
-          <p className="text-gray-400 text-base mt-4 max-w-xl mx-auto">
+          <p className="text-gray-300 text-lg sm:text-xl font-normal leading-relaxed mt-4 max-w-xl mx-auto">
             Comprehensive expertise across modern development technologies and
             frameworks
           </p>
@@ -142,7 +142,7 @@ const Skills = () => {
                         animation: "slideInScale 0.6s ease-out forwards",
                       }}
                     >
-                      <span className="text-gray-300 group-hover/skill:text-white font-medium text-xs sm:text-sm transition-colors duration-300">
+                      <span className="text-gray-300 group-hover/skill:text-white font-medium text-sm transition-colors duration-300">
                         {skill}
                       </span>
                     </div>
