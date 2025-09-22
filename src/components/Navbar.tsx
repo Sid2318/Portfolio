@@ -116,6 +116,23 @@ export default function Navbar() {
             </a>
 
             <a
+              href="#projects"
+              className={`px-4 py-2 text-gray-300 tracking-wide uppercase transition-all duration-300 ease-out
+    ${
+      activeButton === "nav-projects"
+        ? "text-[1.125rem] font-bold"
+        : "text-[1rem] font-medium hover:text-[1.045rem] hover:font-bold"
+    }`}
+              onClick={() =>
+                setActiveButton(
+                  activeButton === "nav-projects" ? "" : "nav-projects"
+                )
+              }
+            >
+              Projects
+            </a>
+
+            <a
               href="#contact"
               className={`px-4 py-2 text-gray-300 tracking-wide uppercase transition-all duration-300 ease-out
     ${
