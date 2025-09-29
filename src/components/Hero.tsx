@@ -106,7 +106,7 @@ export default function Hero() {
                   {/* View Resume Button */}
                   <button
                     onClick={openResume}
-                    className="flex items-center space-x-2 bg-white hover:bg-gray-100 text-black px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-base"
+                    className="flex items-center space-x-2 bg-white hover:bg-gray-100 text-black px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-base mx-29 mb-10"
                   >
                     <FaEye size={18} />
                     <span>View Resume</span>
