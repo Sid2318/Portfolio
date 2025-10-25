@@ -72,7 +72,7 @@ export default function Hero() {
                   {/* Social Media Icons */}
                   <div className="flex space-x-4 sm:space-x-6">
                     <a
-                      href="https://www.linkedin.com/in/siddhimohol23/"
+                      href="https://www.linkedin.com/in/siddhi-m-2763a3306/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-500 hover:text-blue-400 transition-colors duration-300 hover:scale-110 transform"
@@ -80,7 +80,7 @@ export default function Hero() {
                       <FaLinkedin size={40} />
                     </a>
                     <a
-                      href="https://github.com/siddhimohol"
+                      href="https://github.com/Sid2318"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-300 hover:text-white transition-colors duration-300 hover:scale-110 transform"
@@ -88,7 +88,7 @@ export default function Hero() {
                       <FaGithub size={40} />
                     </a>
                     <a
-                      href="https://leetcode.com/siddhimohol/"
+                      href="https://leetcode.com/u/SiddhiM_04/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-orange-500 hover:text-orange-400 transition-colors duration-300 hover:scale-110 transform"
@@ -97,9 +97,13 @@ export default function Hero() {
                     </a>
                     <a
                       href="mailto:siddhimohol23@gmail.com"
-                      className="text-red-500 hover:text-red-400 transition-colors duration-300 hover:scale-110 transform"
+                      className="text-red-500 hover:text-red-400 transition-colors duration-300 hover:scale-110 transform group relative"
+                      title="siddhimohol23@gmail.com"
                     >
                       <FaEnvelope size={40} />
+                      <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-900/90 text-white text-sm py-1 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                        siddhimohol23@gmail.com
+                      </span>
                     </a>
                   </div>
 

@@ -24,12 +24,27 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Send data to our API route
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      const data = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message');
+      }
+      
+      // Success! Clear the form
       setSubmitStatus("success");
       setFormData({ name: "", email: "", message: "" });
-    } catch {
+    } catch (error) {
+      console.error('Error submitting form:', error);
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
@@ -235,7 +250,7 @@ export default function Contact() {
               )}
               {submitStatus === "error" && (
                 <div className="p-4 bg-red-500/20 border border-red-500/40 rounded-xl text-red-400 text-sm">
-                  ❌ Something went wrong. Please try again.
+                  ❌ Unable to send your message. Please try again or contact me directly at {contactInfo[0].value}.
                 </div>
               )}
             </form>

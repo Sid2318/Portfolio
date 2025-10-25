@@ -7,7 +7,7 @@ const projectsData = [
     title: "DataPilot-AutoML-Assistant",
     year: "2025",
     link: "https://github.com/Sid2318/DataPilot-AutoML-Assistant",
-    image: "/images/datapilot.png",
+    image: "/images/Data-Pilot.png",
     description: [
       "Built AutoML, a web app with Streamlit, automating the ML pipeline — data cleaning, EDA, preprocessing, hyperparameter tuning (Optuna), ensemble modeling, and deployment-ready outputs.",
       "Integrated scikit-learn, XGBoost, LightGBM, SMOTE, and Google Gemini AI to automate classification/regression, visualize performance, and provide AI-powered insights in an interactive interface.",
@@ -27,7 +27,7 @@ const projectsData = [
     year: "2024",
     link: "https://github.com/Sid2318/Gram-Nirman-Mitra",
     badge: "SIH Finalist",
-    image: "/images/gramnirman.png",
+    image: "/images/GramMitra.png",
     description: [
       "Developed an immersive, multiplayer, multilingual Unity-based game for rural planning, integrating Mapbox for real-world GIS data and Photon Engine for real-time interactions. Designed intuitive gameplay with features like markets, panchayats, and infrastructure planning to foster sustainability awareness, financial literacy, and strategic decision-making.",
     ],
@@ -44,7 +44,7 @@ const projectsData = [
     title: "CrispCast",
     year: "2025",
     link: "https://github.com/Sid2318/CrispCast",
-    image: "/images/crispcast.png",
+    image: "/images/CrispCast.png",
     description: [
       "Developed CrispCast, an intelligent news summarization agent that autonomously fetches, scrapes, and summarizes articles using HuggingFace NLP models.",
       "Designed a retrieval + summarization pipeline with a Python backend (FastAPI) and React frontend, enabling date-based news discovery.",
@@ -56,7 +56,7 @@ const projectsData = [
     title: "DocuMate",
     year: "2025",
     link: "https://github.com/Sid2318/DocuMate",
-    image: "/images/documate.png",
+    image: "/images/docuMate.png",
     description: [
       "Developed DocuMate, an agentic RAG system that autonomously ingests PDFs & PPTX files, builds vector embeddings, and answers user queries contextually.",
       "Engineered a FastAPI + React full-stack agent with ChromaDB-powered memory and model caching for faster, intelligent document retrieval.",
@@ -74,7 +74,7 @@ const projectsData = [
     title: "RealTime DDOS Attack Detection",
     year: "2024",
     link: "https://github.com/Sid2318/DDOS-Attack-Detection",
-    image: "/images/ddos.png",
+    image: "images/ddos.png",
     description: [
       "Network details are fetched using Scapy and fed as input to the trained model for analysis.",
       "Demonstrated on live web server under DoS attack.",
@@ -92,7 +92,7 @@ const projectsData = [
     title: "NexStay",
     year: "2025",
     link: "https://github.com/Sid2318/NexStay",
-    image: "/images/nexstay.png",
+    image: "/images/Nexstay.png",
     description: [
       "Developed a full-stack MERN application enabling guests and hosts to manage property rentals, inspired by Airbnb.",
       "Built an AI-powered chatbot using Groq's Llama-3.1-8B-Instant and LangGraph to provide booking assistance, recommendations, and query handling.",
@@ -110,9 +110,9 @@ const projectsData = [
     ],
   },
   {
-    title: "Skin Cancer Detection: ML & CNNs",
+    title: "DerMyON",
     year: "2024",
-    link: "https://github.com/Sid2318/Skin-Cancer-Detection",
+    link: "https://github.com/Sid2318/DerMyON",
     image: "/images/skincancer.png",
     description: [
       "Engineered a deep learning-based skin cancer detection system using a Hybrid CNN-Autoencoder Model, optimizing feature extraction and classification for enhanced accuracy.",
@@ -132,29 +132,29 @@ const projectsData = [
 
 const miniProjects = [
   {
-    title: "Portfolio Website",
+    title: "Edufy",
     year: "2025",
-    link: "https://github.com/Sid2318/Portfolio",
+    link: "https://github.com/Sid2318/Edufy",
     description:
-      "Interactive portfolio built with Next.js and Tailwind CSS featuring modern animations and responsive design.",
-    technologies: ["Next.js", "Tailwind", "TypeScript"],
+      "Edufy is an intelligent study companion that helps you upload documents and ask questions about them using RAG (Retrieval-Augmented Generation) technology.",
+    technologies: ["FastAPI", "Tailwind", "LangChain","ChromaDB","HuggingFaceEmbeddings"],
     icon: "🎨",
     color: "purple",
   },
   {
-    title: "API Experiments",
+    title: "CodeSolve AI",
     year: "2024",
-    link: "https://github.com/Sid2318/API-Collection",
+    link: "https://github.com/Sid2318/CodeSolve-AI",
     description:
-      "Various REST API prototypes and microservices for learning different backend technologies.",
-    technologies: ["Node.js", "Express", "MongoDB"],
+      "CodeSolve AI is designed to enhance the way developers solve coding problems.",
+    technologies: ["Flask","JavaScript","HTML5","CSS3","Google Gemini API"],
     icon: "⚡",
     color: "green",
   },
   {
     title: "ML Notebooks",
     year: "2024",
-    link: "https://github.com/Sid2318/ML-Notebooks",
+    link: "https://github.com/Sid2318/Machine-Learning",
     description:
       "Jupyter notebooks for data analysis, model training, and machine learning experiments.",
     technologies: ["Python", "Jupyter", "Pandas"],
@@ -162,52 +162,42 @@ const miniProjects = [
     color: "orange",
   },
   {
-    title: "Weather App",
+    title: "QuizAPP",
     year: "2024",
-    link: "https://github.com/Sid2318/Weather-App",
+    link: "https://github.com/Sid2318/QuizAPP--AppDev",
     description:
-      "Real-time weather application with location-based forecasts and beautiful UI.",
-    technologies: ["React", "API", "CSS"],
-    icon: "🌤️",
-    color: "blue",
-  },
-  {
-    title: "Task Manager",
-    year: "2024",
-    link: "https://github.com/Sid2318/Task-Manager",
-    description:
-      "Simple task management application with drag-and-drop functionality.",
-    technologies: ["Vue.js", "LocalStorage", "CSS"],
+      "Simple quiz application with multiple-choice questions and user authentication.",
+    technologies: ["Java","Android Studio"],
     icon: "📝",
     color: "indigo",
   },
   {
-    title: "Calculator App",
+    title: "DeepLearning",
     year: "2024",
-    link: "https://github.com/Sid2318/Calculator-App",
+    link: "https://github.com/Sid2318/DeepLearning",
     description:
-      "Advanced calculator with scientific functions and modern interface design.",
-    technologies: ["JavaScript", "HTML", "CSS"],
+      "Advanced deep learning model for image classification and object detection.",
+    technologies: ["Python", "TensorFlow", "Keras"],
     icon: "🧮",
     color: "pink",
   },
   {
-    title: "Color Palette Generator",
+    title: "GlassME",
     year: "2024",
-    link: "https://github.com/Sid2318/Color-Palette-Generator",
+    link: "https://github.com/Sid2318/Mini-Projects/tree/main/GlassME",
     description:
-      "Tool for generating and managing color palettes for design projects.",
-    technologies: ["Vanilla JS", "Canvas", "CSS"],
+      "Apply glasses filters like snapchat",
+    technologies: ["React","CSS","FastApi"],
     icon: "🎨",
     color: "teal",
   },
   {
-    title: "Password Generator",
+    title: "Emotions Detection",
     year: "2024",
-    link: "https://github.com/Sid2318/Password-Generator",
+    link: "https://github.com/Sid2318/Mini-Projects/tree/main/Emotion%20Detection",
     description:
-      "Secure password generator with customizable options and strength indicators.",
-    technologies: ["JavaScript", "Crypto", "CSS"],
+      "Detect and analyze emotions in text using natural language processing.",
+    technologies: ["JavaScript", "TensorFlow", "CSS","CNN"],
     icon: "🔐",
     color: "red",
   },
