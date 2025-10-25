@@ -137,7 +137,13 @@ const miniProjects = [
     link: "https://github.com/Sid2318/Edufy",
     description:
       "Edufy is an intelligent study companion that helps you upload documents and ask questions about them using RAG (Retrieval-Augmented Generation) technology.",
-    technologies: ["FastAPI", "Tailwind", "LangChain","ChromaDB","HuggingFaceEmbeddings"],
+    technologies: [
+      "FastAPI",
+      "Tailwind",
+      "LangChain",
+      "ChromaDB",
+      "HuggingFaceEmbeddings",
+    ],
     icon: "🎨",
     color: "purple",
   },
@@ -147,7 +153,7 @@ const miniProjects = [
     link: "https://github.com/Sid2318/CodeSolve-AI",
     description:
       "CodeSolve AI is designed to enhance the way developers solve coding problems.",
-    technologies: ["Flask","JavaScript","HTML5","CSS3","Google Gemini API"],
+    technologies: ["Flask", "JavaScript", "HTML5", "CSS3", "Google Gemini API"],
     icon: "⚡",
     color: "green",
   },
@@ -167,7 +173,7 @@ const miniProjects = [
     link: "https://github.com/Sid2318/QuizAPP--AppDev",
     description:
       "Simple quiz application with multiple-choice questions and user authentication.",
-    technologies: ["Java","Android Studio"],
+    technologies: ["Java", "Android Studio"],
     icon: "📝",
     color: "indigo",
   },
@@ -185,9 +191,8 @@ const miniProjects = [
     title: "GlassME",
     year: "2024",
     link: "https://github.com/Sid2318/Mini-Projects/tree/main/GlassME",
-    description:
-      "Apply glasses filters like snapchat",
-    technologies: ["React","CSS","FastApi"],
+    description: "Apply glasses filters like snapchat",
+    technologies: ["React", "CSS", "FastApi"],
     icon: "🎨",
     color: "teal",
   },
@@ -197,7 +202,7 @@ const miniProjects = [
     link: "https://github.com/Sid2318/Mini-Projects/tree/main/Emotion%20Detection",
     description:
       "Detect and analyze emotions in text using natural language processing.",
-    technologies: ["JavaScript", "TensorFlow", "CSS","CNN"],
+    technologies: ["JavaScript", "TensorFlow", "CSS", "CNN"],
     icon: "🔐",
     color: "red",
   },
@@ -286,7 +291,7 @@ const MiniProjectCard = ({
 
       {/* Technologies */}
       <div className="flex flex-wrap gap-2">
-        {project.technologies.map((tech, index) => (
+        {project.technologies.map((tech) => (
           <span
             key={tech}
             className={`px-3 py-1.5 rounded-full text-xs font-medium bg-gray-700/40 border border-gray-600/40 text-gray-300 group-hover:bg-gray-600/50 group-hover:border-gray-500/50 transition-all duration-200`}

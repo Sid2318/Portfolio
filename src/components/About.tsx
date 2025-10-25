@@ -118,7 +118,7 @@ const About = () => {
                         🏆
                       </span>
                       <h4 className="text-white font-bold text-lg">
-                        SIH'24 Finalist
+                        SIH&apos;24 Finalist
                       </h4>
                     </div>
                     <p className="text-yellow-300/80 text-sm">Runner Up</p>
@@ -148,7 +148,7 @@ const About = () => {
                         🎯
                       </span>
                       <h4 className="text-white font-bold text-lg">
-                        ISIH'24 Winner
+                        ISIH&apos;24 Winner
                       </h4>
                     </div>
                     <p className="text-green-300/80 text-sm">Winner</p>
