@@ -12,14 +12,14 @@ type ContactFormData = {
 const createTransporter = () => {
   // Settings for Gmail
   return nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true, // Use SSL
     auth: {
       user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASSWORD,
+      pass: process.env.EMAIL_PASSWORD, // This should be an App Password
     },
-    tls: {
-      rejectUnauthorized: false, // Helps with some Gmail connection issues
-    },
+    debug: true, // Enable debugging
   });
 };
 
@@ -105,6 +105,7 @@ export async function POST(request: Request) {
       // Send the email
       const info = await transporter.sendMail(mailOptions);
       console.log("Message sent: %s", info.messageId);
+      console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 
       // Return success
       return NextResponse.json(
