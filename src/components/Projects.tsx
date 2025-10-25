@@ -113,7 +113,7 @@ const projectsData = [
     title: "DerMyON",
     year: "2024",
     link: "https://github.com/Sid2318/DerMyON",
-    image: "/images/skincancer.png",
+    image: "/images/skinCancer.png",
     description: [
       "Engineered a deep learning-based skin cancer detection system using a Hybrid CNN-Autoencoder Model, optimizing feature extraction and classification for enhanced accuracy.",
       "Developed a web-based platform using HTML, CSS, and Machine Learning, enabling users to upload skin lesion images for analysis while continuously improving model performance through medical feedback.",
